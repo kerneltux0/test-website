@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+a:link { 
+    color: rgb(0, 0, 153)
+}
+
+a:visited { 
+    color: rgb(153, 0, 153)
+}
+
+a:hover { 
+    color: rgb(0, 96, 255)
+}
+
+a:active { 
+    color: rgb(255, 0, 102)
+}
+
+#top{
+    background-image: url("../Images/Seneca Cruise 08.jpg");
+    background-attachment: local;
+    color: white;
+    background-size: 100% 100%;
+}
+
+#Home, #Github, #Vimeo, #Blog, #Contact{
+    display: inline-block;
+    padding: 5px;
+    background-color: #6666ff;
+    border-radius: 10px;
+    margin: 1%;
+    width: 18%;
+}
+
+#Bio{
+    text-align: center;
+}
