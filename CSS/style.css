@@ -38,3 +38,13 @@ a:active {
 #Bio{
     text-align: center;
 }
+
+.blogpost{
+    margin: 15px;
+    
+}
+
+.container{
+     background-image: radial-gradient(circle, #1563d8, #007ddc, #0090cd, #009eb7, #26a8a2);
+
+}
