@@ -4,16 +4,15 @@
       <title>Ryan's Portfolio</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="CSS/bootstrap.min.css">
+      <link rel="stylesheet" href="CSS/bootstrap-reboot.min.css">
       <link rel="stylesheet" href="CSS/style.css" type="text/css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
 
     <div class="jumbotron text-center" ID="top">
       <h1>Ryan's Portfolio</h1>
-      <p>Here you will find links to all of my projects!</p>
+      <p class="lead">Here you will find links to all of my projects!</p>
       <nav>
         <a id="Home" href="index.html">Homepage</a>
         <a id="Github" href="https://github.com/kerneltux0">Github</a>
@@ -23,29 +22,24 @@
       </nav>
     </div>
 
-        <div class="contact">
-          <form action="action_page.php">
-
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-            <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-            </select>
-
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-            <input type="submit" value="Submit">
-
-          </form>  
-        </div> 
-
+        <div class="container">
+            <div class="col-xs-12">
+                <form>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="email">Your email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email..">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                    <input type="submit" value="Submit" href="php/send_email.php">
+                </form>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>

@@ -27,7 +27,6 @@ a:active {
 }
 
 #Home, #Github, #Vimeo, #Blog, #Contact{
-    display: inline-block;
     padding: 5px;
     background-color: #6666ff;
     border-radius: 10px;
@@ -35,18 +34,9 @@ a:active {
     width: 18%;
 }
 
-#Bio{
-    text-align: center;
-}
-
 .blogpost{
     margin: 15px;
     
-}
-
-.container{
-    background-image: radial-gradient(circle, #1563d8, #007ddc, #0090cd, #009eb7, #26a8a2);
-
 }
 
 input[type=text], select, textarea {
@@ -78,4 +68,12 @@ input[type=submit]:hover {
     background-color: #f2f2f2;
     padding: 20px;
     margin: 5px;
+}
+
+body {
+    background-image: radial-gradient(circle, #1563d8, #007ddc, #0090cd, #009eb7, #26a8a2);
+}
+
+#posts {
+    background-color: white;
 }
